@@ -1,16 +1,16 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
+  "name": "portfolio-cms",
+  "version": "1.0.0",
   "private": true,
-  "description": "A Strapi application",
+  "description": "A Strapi application for danishrashidin.com",
   "license": "MIT",
   "author": {
-    "name": "A Strapi developer"
+    "name": "danishrashidin"
   },
   "scripts": {
     "build": "strapi build",
     "develop": "strapi develop",
-    "docker:build": "sudo docker build --build-arg NODE_ENV=production -platform linux/amd64 -t docker.io/danishrashidin/portfolio-cms:latest -f Dockerfile.prod .",
+    "docker:build": "sudo docker build --build-arg NODE_ENV=production --platform linux/amd64 -t docker.io/danishrashidin/portfolio-cms:latest -f Dockerfile.prod .",
     "start": "strapi start",
     "strapi": "strapi"
   },
