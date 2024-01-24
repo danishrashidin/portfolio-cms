@@ -11,6 +11,7 @@
     "build": "strapi build",
     "develop": "strapi develop",
     "docker:build": "sudo docker build --build-arg NODE_ENV=production --platform linux/amd64 -t docker.io/danishrashidin/portfolio-cms:latest -f Dockerfile.prod .",
+    "docker:push": "sudo docker push docker.io/danishrashidin/portfolio-cms:latest",
     "start": "strapi start",
     "strapi": "strapi"
   },
