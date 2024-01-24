@@ -35,6 +35,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "githubPage": {
+      "type": "string"
     }
   }
 }

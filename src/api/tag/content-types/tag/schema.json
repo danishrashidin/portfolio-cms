@@ -30,6 +30,11 @@
     "iconUrl": {
       "type": "string",
       "regex": "\\b(?:https?|ftp):\\/\\/[-A-Za-z0-9+&@#\\/%?=~_|!:,.;]*[-A-Za-z0-9+&@#\\/%=~_|]"
+    },
+    "badgeColor": {
+      "type": "string",
+      "unique": true,
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
     }
   }
 }
