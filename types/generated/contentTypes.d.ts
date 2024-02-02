@@ -424,6 +424,11 @@ export interface ApiTagTag extends Schema.CollectionType {
     >;
     iconUrl: Attribute.String;
     badgeColor: Attribute.String & Attribute.Unique;
+    proficiency: Attribute.Enumeration<
+      ['expert', 'proficient', 'familiar', 'beginner']
+    > &
+      Attribute.Required &
+      Attribute.DefaultTo<'proficient'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

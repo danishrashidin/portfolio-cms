@@ -35,6 +35,17 @@
       "type": "string",
       "unique": true,
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "proficiency": {
+      "type": "enumeration",
+      "enum": [
+        "expert",
+        "proficient",
+        "familiar",
+        "beginner"
+      ],
+      "required": true,
+      "default": "proficient"
     }
   }
 }

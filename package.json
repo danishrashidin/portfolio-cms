@@ -13,7 +13,8 @@
     "docker:build": "sudo docker build --build-arg NODE_ENV=production --platform linux/amd64 -t docker.io/danishrashidin/portfolio-cms:latest -f Dockerfile.prod .",
     "docker:push": "sudo docker push docker.io/danishrashidin/portfolio-cms:latest",
     "start": "strapi start",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "strapi:transfer": "strapi transfer --to https://strapi.danishrashidin.com --to-token 1fe1b3be9fe588b25914de7aa6f2093771d7c3bb56585dd98528aa6bfdf8d2fd7ce71d752f10ce0d1cdc6ea48419ca5845c206d0b769249c18dc5b01b3edbdb038449b4483c9e36450f0e167894d25442d6e13ad389793496e6d569509737fb68f233a02c53ea094782cdf049dad30e7896b4e5574232f2bfa45256469a37213"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "4.17.1",
